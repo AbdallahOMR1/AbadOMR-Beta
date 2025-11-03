@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="OMR Page.css">
+    <title>OMR Page GTA6 project</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="this is my first web page"/>
+    <link rel="icon" type="image/.png" href="Photos/gtaLogoGlow.png">
+    <style>
+         
+        @font-face {
+            font-family: "UnifrakturCook" ;
+            src: url("Fonts/UnifrakturCook-Bold.ttf");
+        }
+
+
+        @font-face {
+            font-family: "pricedown" ;
+            src: url("Fonts/Pricedown\ Bl.otf");
+        }
+
+        @font-face {
+            font-family: "Artdeco" ;
+            src: url("Fonts/Artdeco-DM13.ttf");
+        }
+
+    </style>
+</head>
+<body  style="background-image:url(Photos/IVbackground.jpg) ;
+ color: rgb(56, 5, 66);" align="center"> 
+
+
+
+
+
+ <div class="x"><font face="pricedown" size="7">Welcome to my OMR Page</font></div> 
+ <h1></h1>
+
+ <!-- شريط الأزرار -->
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="https://www.rockstargames.com/VI">Rockstar Games News Of GTA 6</a>
+  <a href="https://www.instagram.com/aboude._.omran1/?__pwa=1">My Instagram</a>
+</div>
+
+<style>
+.navbar {
+  background-color: rgb(118, 0, 122); 
+  padding: 10px;
+  text-align: center;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  background-color: rgb(69, 7, 88);
+  border-radius: 6px;
+}
+
+</style>
+
+
+
+<div class="video-container">
+ <video id="vid" src="videos/GTA5_Trailer.mp4" poster="Photos/GTA6.png" playsinline></video>
+
+  <!-- زر تشغيل/إيقاف وسط الفيديو -->
+  <button id="pp" class="play-pause"><span class="play-icon"></span></button>
+
+  <!-- زر شاشة كاملة -->
+  <button id="fs" class="fullscreen-btn">⛶</button>
+</div>
+
+<style>
+.video-container{position:relative;width:80%;max-width:1100px;margin:40px auto;aspect-ratio:16/9;border-radius:20px;overflow:hidden}
+video{width:100%;height:100%;object-fit:cover;display:block}
+.play-pause{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:90px;height:90px;border-radius:50%;border:0;background:rgba(255,255,255,.85);cursor:pointer;display:grid;place-items:center;box-shadow:0 0 30px rgba(255,0,255,.4)}
+.play-icon{width:0;height:0;border-left:30px solid #000;border-top:18px solid transparent;border-bottom:18px solid transparent}
+.play-pause.hidden{opacity:0;transform:translate(-50%,-50%) scale(.85);pointer-events:none;transition:.25s}
+.fullscreen-btn{position:absolute;right:20px;bottom:20px;border:0;border-radius:8px;font-size:24px;padding:8px 12px;color:#fff;background:rgba(0,0,0,.5);cursor:pointer}
+</style>
+
+<script>
+const v=document.getElementById('vid');
+const pp=document.getElementById('pp');
+const fs=document.getElementById('fs');
+
+pp.onclick=()=>{ if(v.paused){ v.play(); pp.classList.add('hidden'); } else { v.pause(); pp.classList.remove('hidden'); } };
+v.addEventListener('pause',()=>pp.classList.remove('hidden'));
+v.addEventListener('play', ()=>pp.classList.add('hidden'));
+fs.onclick=()=>{ if(!document.fullscreenElement){ v.requestFullscreen?.(); } else { document.exitFullscreen?.(); } };
+</script>
+
+
+
+<div class="text"><h1 align="right">By Abdallah Omran<h1></div>
+
+
+ <br><br>
+  <div class="Trailer2"  ></div>
+ <br><br><br><br>
+ <div></div><img src="Photos/Hero_FG(3).png" width="600" align="right"></img></div>
+<div><img src="Photos/VIlogo.png" width="300" align="left" ></img></div>
+ <div class="gradient-text"><font face="" align="left" ><h1>Coming 26 May 2026</h1></font><br><br>
+ <div><font size="7" ><h1 align="right">Vice City, USA.</font></h1</font></h1></div>
+
+
+ </div> <br><br> 
+ <div><font size="2"><h1 align="right">Jason and Lucia have always known the deck is stacked against them. But when an easy score goes wrong,
+   they find themselves on the darkest side of the sunniest place in America,
+   in the middle of a criminal conspiracy stretching across the state of Leonida — forced to rely on each other more than ever if they want to make it out alive.</h1></font></div>
+ 
+ 
+ <img src="Photos/Jason_Duval_02.jpeg" width="600 " align="left"></img> <div><font size="6"><h1>Jason Duval</h1></font></div>
+ <div><font size="4"><h1 align="right">Jason wants an easy life, but things just keep getting harder.</h1></font></div>
+ <div class="text"><font size="6"><p align="right">Jason grew up around grifters and crooks. After a stint in the Army trying to shake off his troubled teens,<br>
+   he found himself in the Keys doing what he knows best, working for local drug runners.<br>
+    It might be time to try something new.</p></font></div><br><br>
+
+
+<img src="Photos/Jason_Duval_02.png" width="700" align="right"></img><div class="text"><font size="7" ><p align="left">"If anything happens, I'm right behind you"</p></font></div><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="xx"><font face="" size=""></font></div><br><br><br>
+
+<img src="Photos/outro.jpeg" width="800" align="left"><div class="Leonida1"><font size="5"><h1 align="center">Only in<br>Leonida</h1></font></div><img src="Photos/Leonida/Brian_Heder_01.jpeg" width="300" align="right"></img><div class="text"><font size="6" ><p align="left">"If anything happens, I'm right behind you"</p></font></div><br><img src="Photos/Leonida/Raul_Bautista_01.jpeg" width="300" align="left">
+<br><br><br><br>
+<br><br><br><br><img src="Photos/Leonida/Raul_Bautista_03.jpeg" width="600" align="right"><div class="Leonida1"><font size="5"><h1 align="center">Raul<br>Bautista</h1></font></div><div class="text"><font><h2>Confidence, charm, and cunning — Raul’s a seasoned bank robber always on the hunt for talent ready to take the risks that bring the biggest rewards.</h2></font></div>
+
+
+
+    
+     
+
+ <form>
+
+
+
+ </form>
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+ 
+</html>
