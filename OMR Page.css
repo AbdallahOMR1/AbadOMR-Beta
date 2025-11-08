@@ -1,3 +1,13 @@
+.mobile { display: none; }
+.desktop { display: block; }
+
+@media (max-width: 768px) {
+  .mobile { display: block; }
+  .desktop { display: none; }
+}
+
+
+
 .x {
     height: 100px;
     max-width: 100%;
@@ -149,4 +159,5 @@ background-color:rgb(46, 0, 48);
 
   .trl1{
     color:#FF7F50;
+
   }
