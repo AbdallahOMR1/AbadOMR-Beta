@@ -165,7 +165,77 @@ fs.onclick=()=>{ if(!document.fullscreenElement){ v.requestFullscreen?.(); } els
 </details>
 
 
+<style>
 
+/* القواعد الأساسية لكل الأجهزة */
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: white;
+  text-align: center;
+  background-color: #2b1b47; /* لون تقريبي لخلفيتك */
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* ======= موبايل (عرض أقل من 768 بكسل) ======= */
+@media (max-width: 768px) {
+
+  h1, h2, h3, h4, h5 {
+    font-size: clamp(1.5rem, 5vw, 2.3rem);
+    line-height: 1.3;
+  }
+
+  p, a, span {
+    font-size: clamp(1rem, 4.5vw, 1.2rem);
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  nav a {
+    display: block;
+    padding: 8px 0;
+    font-weight: 600;
+  }
+
+  .header, .title-box {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* الفيديو أو الصورة الكبيرة */
+  .main-video, video {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+
+  /* عناصر النصوص أو اللوغو */
+  .welcome-text, .logo-text {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+    margin: 10px 0;
+  }
+
+  /* العناصر السفلية (By Abdallah, etc.) */
+  footer, .footer-text {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+}
+
+    
+</style>
     
      
 
@@ -195,6 +265,7 @@ fs.onclick=()=>{ if(!document.fullscreenElement){ v.requestFullscreen?.(); } els
 </body>
  
 </html>
+
 
 
 
