@@ -3,9 +3,9 @@
 <head>
     <link rel="stylesheet" href="OMR Page.css">
     <title>RockStare OMR</title>
- <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <meta name="description" content="This website for more information for Grand theft Auto 6">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/.png" href="Photos/gtaLogoGlow.png">
 </head>
     
@@ -167,70 +167,60 @@ fs.onclick=()=>{ if(!document.fullscreenElement){ v.requestFullscreen?.(); } els
 
 <style>
 
-/* القواعد الأساسية لكل الأجهزة */
+/* لجعل الموقع متجاوب مع الشاشات مثل Galaxy A55 */
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
   color: white;
   text-align: center;
-  background-color: #2b1b47; /* لون تقريبي لخلفيتك */
+  background-color: #2b1b47; /* اللون البنفسجي اللي مستخدمه */
 }
 
+/* الصور والفيديوهات تاخد عرض الشاشة بدون تجاوز */
 img, video {
   max-width: 100%;
   height: auto;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
-/* ======= موبايل (عرض أقل من 768 بكسل) ======= */
-@media (max-width: 768px) {
+/* تنسيق النصوص الأساسي */
+h1, h2, h3 {
+  font-size: clamp(1.8rem, 6vw, 2.8rem);
+  line-height: 1.3;
+}
+p, a, span {
+  font-size: clamp(1rem, 4vw, 1.3rem);
+}
 
-  h1, h2, h3, h4, h5 {
-    font-size: clamp(1.5rem, 5vw, 2.3rem);
-    line-height: 1.3;
-  }
-
-  p, a, span {
-    font-size: clamp(1rem, 4.5vw, 1.2rem);
-  }
-
+/* ====== موبايل (أقل من 800 بكسل) ====== */
+@media (max-width: 800px) {
   nav {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    background-color: rgba(0,0,0,0.4);
     padding: 10px;
     border-radius: 10px;
+    gap: 10px;
   }
 
   nav a {
     display: block;
+    width: 100%;
     padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
     font-weight: 600;
   }
 
-  .header, .title-box {
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-
-  /* الفيديو أو الصورة الكبيرة */
-  .main-video, video {
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-  }
-
-  /* عناصر النصوص أو اللوغو */
-  .welcome-text, .logo-text {
-    font-size: clamp(1.8rem, 6vw, 2.5rem);
+  .title, .welcome-text {
+    font-size: clamp(2rem, 7vw, 2.8rem);
     margin: 10px 0;
   }
 
-  /* العناصر السفلية (By Abdallah, etc.) */
-  footer, .footer-text {
+  .footer, footer {
     font-size: 1rem;
-    margin-top: 20px;
+    margin-top: 25px;
   }
 }
 
@@ -265,6 +255,7 @@ img, video {
 </body>
  
 </html>
+
 
 
 
